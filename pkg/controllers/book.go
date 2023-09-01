@@ -143,6 +143,5 @@ func GetBooks(c echo.Context) error {
 		}
 		return c.JSON(http.StatusInternalServerError, data)
 	}
-
 	return c.JSON(http.StatusOK, books)
 }
